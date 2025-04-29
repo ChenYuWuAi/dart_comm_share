@@ -1,0 +1,10 @@
+std_msgs/Header header
+int32 primary_yaw
+int32 primary_yaw_offset
+int32 primary_force
+int32 primary_force_offset
+int32[4] auxiliary_yaw_offsets
+int32[4] auxiliary_force_offsets
+uint8 dart_launch_process_offset_begin
+uint8 dart_launch_process_offset_end
+uint64 last_param_update_time
