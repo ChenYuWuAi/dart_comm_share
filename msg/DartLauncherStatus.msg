@@ -1,22 +1,20 @@
 std_msgs/Header header
-bool motor_ls_online 0
-bool motor_y_online 0
-bool motor_dm_online 0
-bool judge_online 0
-bool[4] motor_fw_online [0,0,0,0]
-bool rc_online 0
-bool dart_launcher_online 0
-
-uint8 dart_state 255 # boot = 100, protect = 101, remote = 102, match = 103-106 Enter Wait Launch Reload, undefined=255
-
-bool motor_y_resetting 0
-bool motor_dm_resetting 0
-bool motor_ls_resetting 0
-
-uint8 dart_launch_process 0
-
-int32 motor_y_angle 0
-int32[4] motor_fw_velocity [0,0,0,0]
-float64[4] motor_fw_current [0,0,0,0]
-
-float64[4] bus_voltage [0,0,0,0]
+bool motor_yaw_online
+bool[2] motor_loader_online
+bool motor_trigger_online
+bool judge_online
+bool rc_online
+uint8 dart_state
+uint8 dart_launch_process
+int32 motor_yaw_angle
+int32 motor_trigger_angle
+int32[2] motor_loader_current
+int32[2] motor_loader_angle
+float64 last_launch_speed
+uint64 last_launch_time
+uint8 dart_launch_opening_status
+uint8 game_progress
+uint8 dart_remaining_time
+uint16 latest_launch_cmd_time
+uint16 stage_remain_time
+bool judge_online

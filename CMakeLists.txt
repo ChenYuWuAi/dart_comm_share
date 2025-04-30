@@ -17,8 +17,7 @@ find_package(rosidl_default_generators REQUIRED)
 #添加消息文件和依赖
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/GreenLight.msg"
-  "msg/DartParam.msg"
-  "msg/Judge.msg"
+  "msg/DartLauncherParams.msg"
   "msg/DartLauncherStatus.msg"
    DEPENDENCIES std_msgs geometry_msgs
  )

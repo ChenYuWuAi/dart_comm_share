@@ -7,4 +7,5 @@ int32[4] auxiliary_yaw_offsets
 int32[4] auxiliary_force_offsets
 uint8 dart_launch_process_offset_begin
 uint8 dart_launch_process_offset_end
+bool update_to_launch_protocol
 uint64 last_param_update_time
