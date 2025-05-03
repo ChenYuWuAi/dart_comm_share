@@ -1,11 +1,11 @@
-std_msgs/Header header
 int32 primary_yaw
-int32 primary_yaw_offset
+int32 primary_yaw_offset # 用于视觉自瞄
 int32 primary_force
-int32 primary_force_offset
+int32 primary_force_offset # 用于根据测速校准
 int32[4] auxiliary_yaw_offsets
 int32[4] auxiliary_force_offsets
 uint8 dart_launch_process_offset_begin
 uint8 dart_launch_process_offset_end
-bool update_to_launch_protocol
+bool auto_aim_enabled
+double target_auto_aim_x_axis
 uint64 last_param_update_time
