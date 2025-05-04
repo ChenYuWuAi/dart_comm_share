@@ -17,3 +17,5 @@ uint8 game_progress
 uint8 dart_remaining_time
 uint16 latest_launch_cmd_time
 uint16 stage_remain_time
+dart_msgs/DartLauncherParams params
+dart_msgs/DartLauncherParams protocols
