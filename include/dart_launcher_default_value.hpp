@@ -3,33 +3,31 @@
  * @brief 飞镖架参数默认值
  */
 
-#define defaultDartParams                        \
-    {                                            \
-        .primary_yaw = 40000,                    \
-        .primary_yaw_offset = 0,                 \
-        .primary_force = 6000000,                \
-        .primary_force_offset = 0,               \
-        .auxiliary_yaw_offsets = {0, 0, 0, 0},   \
-        .auxiliary_force_offsets = {0, 0, 0, 0}, \
-        .dart_launch_process_offset_begin = 0,   \
-        .dart_launch_process_offset_end = 3,     \
-        .auto_aim_enabled = false,               \
-        .target_auto_aim_x_axis = 640,           \
-        .last_param_update_time = 0}
+#define defaultDartParams(x)                  \
+    x.primary_yaw = 40000;                    \
+    x.primary_yaw_offset = 0;                 \
+    x.primary_force = 6000000;                \
+    x.primary_force_offset = 0;               \
+    x.auxiliary_yaw_offsets = {0, 0, 0, 0};   \
+    x.auxiliary_force_offsets = {0, 0, 0, 0}, \
+    x.dart_launch_process_offset_begin = 0;   \
+    x.dart_launch_process_offset_end = 3;     \
+    x.auto_aim_enabled = false;               \
+    x.target_auto_aim_x_axis = 640;           \
+    x.last_param_update_time = 0;
 
-#define defaultDartProtocols                     \
-    {                                            \
-        .primary_yaw = 40000,                    \
-        .primary_yaw_offset = 0,                 \
-        .primary_force = 6000000,                \
-        .primary_force_offset = 0,               \
-        .auxiliary_yaw_offsets = {0, 0, 0, 0},   \
-        .auxiliary_force_offsets = {0, 0, 0, 0}, \
-        .dart_launch_process_offset_begin = 0,   \
-        .dart_launch_process_offset_end = 3,     \
-        .auto_aim_enabled = false,               \
-        .target_auto_aim_x_axis = 640,           \
-        .last_param_update_time = 0}
+#define defaultDartProtocols(x)            \
+    x.primary_yaw = 40000;                    \
+    x.primary_yaw_offset = 0;                 \
+    x.primary_force = 6000000;                \
+    x.primary_force_offset = 0;               \
+    x.auxiliary_yaw_offsets = {0, 0, 0, 0};   \
+    x.auxiliary_force_offsets = {0, 0, 0, 0}, \
+    x.dart_launch_process_offset_begin = 0;   \
+    x.dart_launch_process_offset_end = 3;     \
+    x.auto_aim_enabled = false;               \
+    x.target_auto_aim_x_axis = 640;           \
+    x.last_param_update_time = 0;
 
 #define defaultDartStatus                      \
     {                                          \
