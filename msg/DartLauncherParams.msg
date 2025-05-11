@@ -1,5 +1,4 @@
 int32 primary_yaw
-int32 primary_yaw_offset # 用于视觉自瞄
 int32 primary_force
 int32 primary_force_offset # 用于根据测速校准
 int32[4] auxiliary_yaw_offsets
