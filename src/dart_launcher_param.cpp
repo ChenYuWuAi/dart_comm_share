@@ -26,16 +26,16 @@ namespace dart_msgs
 
         void from_json(const json &j, dart_msgs::msg::DartLauncherParams &param)
         {
-            j.at("primary_yaw").get_to(param.primary_yaw);
-            j.at("primary_force").get_to(param.primary_force);
-            j.at("primary_force_offset").get_to(param.primary_force_offset);
-            j.at("auxiliary_yaw_offsets").get_to(param.auxiliary_yaw_offsets);
-            j.at("auxiliary_force_offsets").get_to(param.auxiliary_force_offsets);
-            j.at("dart_launch_process_offset_begin").get_to(param.dart_launch_process_offset_begin);
-            j.at("dart_launch_process_offset_end").get_to(param.dart_launch_process_offset_end);
-            j.at("auto_aim_enabled").get_to(param.auto_aim_enabled);
-            j.at("target_auto_aim_x_axis").get_to(param.target_auto_aim_x_axis);
-            j.at("last_param_update_time").get_to(param.last_param_update_time);
+            if (j.contains("primary_yaw")) j.at("primary_yaw").get_to(param.primary_yaw);
+            if (j.contains("primary_force")) j.at("primary_force").get_to(param.primary_force);
+            if (j.contains("primary_force_offset")) j.at("primary_force_offset").get_to(param.primary_force_offset);
+            if (j.contains("auxiliary_yaw_offsets")) j.at("auxiliary_yaw_offsets").get_to(param.auxiliary_yaw_offsets);
+            if (j.contains("auxiliary_force_offsets")) j.at("auxiliary_force_offsets").get_to(param.auxiliary_force_offsets);
+            if (j.contains("dart_launch_process_offset_begin")) j.at("dart_launch_process_offset_begin").get_to(param.dart_launch_process_offset_begin);
+            if (j.contains("dart_launch_process_offset_end")) j.at("dart_launch_process_offset_end").get_to(param.dart_launch_process_offset_end);
+            if (j.contains("auto_aim_enabled")) j.at("auto_aim_enabled").get_to(param.auto_aim_enabled);
+            if (j.contains("target_auto_aim_x_axis")) j.at("target_auto_aim_x_axis").get_to(param.target_auto_aim_x_axis);
+            if (j.contains("last_param_update_time")) j.at("last_param_update_time").get_to(param.last_param_update_time);
         }
     };
 }; // namespace dart_msgs
