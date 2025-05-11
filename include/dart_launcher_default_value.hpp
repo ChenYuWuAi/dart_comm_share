@@ -59,6 +59,6 @@
         .dart_remaining_time = 0,              \
         .latest_launch_cmd_time = 0,           \
         .stage_remain_time = 0,                \
-        .target_yaw_offset = 0,                \
+        .primary_yaw_offset = 0,                \
         .params = {0},                         \
         .protocols = {0}}
