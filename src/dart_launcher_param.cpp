@@ -13,7 +13,6 @@ namespace dart_msgs
         void to_json(json &j, const dart_msgs::msg::DartLauncherParams &param)
         {
             j["primary_yaw"] = param.primary_yaw;
-            j["primary_yaw_offset"] = param.primary_yaw_offset;
             j["primary_force"] = param.primary_force;
             j["primary_force_offset"] = param.primary_force_offset;
             j["auxiliary_yaw_offsets"] = param.auxiliary_yaw_offsets;
@@ -28,7 +27,6 @@ namespace dart_msgs
         void from_json(const json &j, dart_msgs::msg::DartLauncherParams &param)
         {
             j.at("primary_yaw").get_to(param.primary_yaw);
-            j.at("primary_yaw_offset").get_to(param.primary_yaw_offset);
             j.at("primary_force").get_to(param.primary_force);
             j.at("primary_force_offset").get_to(param.primary_force_offset);
             j.at("auxiliary_yaw_offsets").get_to(param.auxiliary_yaw_offsets);
