@@ -10,6 +10,7 @@
 #include "stdint.h"
 #include "nlohmann/json.hpp"
 #include "dart_msgs/msg/dart_launcher_params.hpp"
+#include "dart_msgs/msg/dart_launcher_status.hpp"
 
 namespace dart_msgs
 {
@@ -20,6 +21,10 @@ namespace dart_msgs
         // DartLauncherParams <-> json 序列化、反序列化
         void to_json(json &j, const dart_msgs::msg::DartLauncherParams &param);
         void from_json(const json &j, dart_msgs::msg::DartLauncherParams &param);
+
+        // DartLauncherStatus <-> json 序列化、反序列化
+        void to_json(json &j, const dart_msgs::msg::DartLauncherStatus &status);
+        void from_json(const json &j, dart_msgs::msg::DartLauncherStatus &status);
     }
 } // namespace dart_launcher_param
 
