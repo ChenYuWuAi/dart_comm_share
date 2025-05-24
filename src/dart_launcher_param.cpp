@@ -129,3 +129,4 @@ namespace dart_msgs
                 j.at("protocols").get_to(status.protocols);
         };
     }; // namespace dart_msgs
+}; // namespace msg
